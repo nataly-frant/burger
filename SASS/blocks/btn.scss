@@ -9,5 +9,9 @@
   &--color--gray{
     background:$gray;
     }
+  }
 
+  .btn--color--gray:hover {
+    background: blue;
+    transition: .3s;
   }

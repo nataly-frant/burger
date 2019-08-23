@@ -544,6 +544,11 @@ img {
   background: #2f3234;
 }
 
+.btn--color--gray:hover {
+  background: blue;
+  transition: 0.3s;
+}
+
 .title {
   font-size: 72px;
   font-family: "Gagalin-Regular", Helvetica, sans-serif;
