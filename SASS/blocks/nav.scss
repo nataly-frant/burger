@@ -1,10 +1,7 @@
-.nav {
-  margin-right: 15px;
-}
-
 .nav__list {
   display: flex;
   align-items: center;
+  margin-right: 15px;
 }
 
 .nav__item {
@@ -37,4 +34,5 @@
   color: white;
   font-size: 13px;
   text-transform: uppercase;
+  font-weight: 500;
 }

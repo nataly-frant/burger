@@ -443,6 +443,10 @@ button {
   cursor: pointer;
 }
 
+img {
+  max-width: 100%;
+}
+
 .section {
   height: 100vh;
   min-height: 650px;
@@ -493,13 +497,10 @@ button {
   align-items: center;
 }
 
-.nav {
-  margin-right: 15px;
-}
-
 .nav__list {
   display: flex;
   align-items: center;
+  margin-right: 15px;
 }
 
 .nav__item {
@@ -528,6 +529,7 @@ button {
   color: white;
   font-size: 13px;
   text-transform: uppercase;
+  font-weight: 500;
 }
 
 .btn {
@@ -537,6 +539,9 @@ button {
   text-transform: uppercase;
   color: #ffffff;
   font-size: 13px;
+}
+.btn--color--gray {
+  background: #2f3234;
 }
 
 .title {
@@ -588,7 +593,7 @@ button {
   margin-bottom: 54px;
 }
 
-.best_title {
+.best__title {
   font-size: 24px;
   font-family: "Lifehack-Medium";
   margin-bottom: 33px;
@@ -605,23 +610,25 @@ button {
   height: 50%;
   background: center center/cover no-repeat;
   position: relative;
-  filter: grayscale(100%);
 }
 .reviews__item:hover .reviews__hover {
   opacity: 1;
+}
+.reviews__item:hover .btn--color--gray {
+  background: #1f2122;
 }
 
 .reviews__hover {
   color: white;
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
   background: rgba #444646, 0.5;
-  padding: 50px 19px 19px 19px;
   opacity: 0;
   transition: opacity 0.3s;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  max-width: 235px;
 }
 
 .reviews__title {
