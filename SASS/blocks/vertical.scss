@@ -1,18 +1,36 @@
 .vertical-accordeon{
     height: 100%;
+    width: 100%;
     display: flex;
     justify-content: flex-end;
     &__list, &__item, &__trigger, &__content{
         display: flex;
         height: 100%;
     }
+    &__list{
+        width: 100%;
+        justify-content: flex-end;
+    }
     &__item{
-        &:hover{
+        .&_active{
+            width: 100%;
+            min-width: 620px;
             .vertical-accordeon__title{
                 color: $yellow;
             }
             .vertical-accordeon__wrap-content{
                 width: 540px;
+            }
+            @include phones{
+                position: absolute;
+                top:0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                z-index: 2;
+                .vertical-accordeon__content{
+                    min-width: initial;
+                }
             }
         }
     }
@@ -53,6 +71,6 @@
         background-color: rgba(#2f3234, .93);
         padding: 63px 37px 63px 33px;
         color: $white;
-        min-width: 540px;
+        min-width: auto;
     }
 }

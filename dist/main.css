@@ -540,6 +540,7 @@ img {
   text-transform: uppercase;
   color: #ffffff;
   font-size: 13px;
+  outline: none;
 }
 .btn--color--gray {
   background: #2f3234;
