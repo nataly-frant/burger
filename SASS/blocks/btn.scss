@@ -7,11 +7,11 @@
   font-size: 13px;
 
   &--color--gray{
-    background:$gray;
+    background: $gray;
     }
   }
 
   .btn--color--gray:hover {
-    background: blue;
+    background: #1f2122;
     transition: .3s;
   }

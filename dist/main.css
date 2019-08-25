@@ -545,7 +545,7 @@ img {
 }
 
 .btn--color--gray:hover {
-  background: blue;
+  background: #1f2122;
   transition: 0.3s;
 }
 
@@ -618,9 +618,6 @@ img {
 }
 .reviews__item:hover .reviews__hover {
   opacity: 1;
-}
-.reviews__item:hover .btn--color--gray {
-  background: #1f2122;
 }
 
 .reviews__hover {
