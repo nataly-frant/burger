@@ -1002,6 +1002,7 @@ img {
 .order__radio-elem:checked + .order__radio-fake:after {
   width: 6px;
   height: 6px;
+  background: #e35028;
 }
 
 .order__radio-title {
