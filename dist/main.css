@@ -479,7 +479,7 @@ img {
   flex: 0.8;
 }
 
-.nero__desc {
+.hero__desc {
   padding-top: 85px;
   margin-left: 20px;
 }
@@ -1053,6 +1053,12 @@ img {
   left: 0;
   right: 0;
   height: 100%;
+}
+
+.map-marker {
+  width: 47px;
+  height: 59px;
+  position: absolute;
 }
 
 .footer {

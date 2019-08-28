@@ -7,3 +7,28 @@
   right: 0;
   height: 100%;
 }
+
+.map__marker{
+  width: 47px;
+  height: 59px;
+  position: absolute;
+  &--one{
+    top: 22%;
+    left: 45%;
+  }
+
+  &--two{
+    top: 35%;
+    left: 60%;
+  }
+
+  &--there{
+    top: 53%;
+    left: 83%;
+  }
+
+  &--four{
+    top: 76%;
+    left: 45%;
+  }
+}
