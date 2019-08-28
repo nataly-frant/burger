@@ -11,13 +11,16 @@
   display: flex;
   flex-direction: row;
   align-items: center;
+  margin: 0;
 }
 
 .footer__contacts{
   width: 50%;
-  padding-bottom: 15px;
+  padding-top: 15px;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  margin: 0;
 }
 
 .footer__address{
