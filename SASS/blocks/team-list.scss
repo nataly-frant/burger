@@ -1,0 +1,92 @@
+.team-list__item{
+  margin-bottom: 40px;
+  &:last-child{
+    margin-bottom: 0;
+  }
+  &.active{
+    .team-list__trigger{
+      color: $yellow;
+
+      &:before{
+        transform: rotate(-180deg);
+      }
+    }
+  }
+}
+
+.team-list__trigger{
+  color: $white;
+  font-size: 14px;
+  @include gagalin;
+  text-decoration: none;
+  position: relative;
+  display: block;
+  margin-bottom: 20px;
+
+  &::before, &::after{
+    content: '';
+    display: block;
+    position: absolute;
+    left: -18px;
+    top: 8px;
+    width: 0;
+    height: 0;
+  }
+
+  &::before{
+    border-top: 7px solid $yellow;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 0px solid transparent;
+    transform: rotate(0deg);
+    transition:  .3s;
+  }
+
+  &::after{
+    display: none;
+    border-bottom: 7px solid $yellow;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 0px solid transparent;
+  }
+}
+
+.team-list__content{
+  @extend %clearfix;
+  padding-top: 14px;
+  display: none;
+}
+
+.team-list__pic{
+  text-align: center;
+  width: 30%;
+}
+
+.team-list__img{
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  @include cover;
+  border-radius: 50%;
+}
+
+.team-list__text{
+  width: 70%;
+}
+
+.team-list__pic, .team-list__text{
+  float: left;
+}
+
+.team-list__title{
+  @include ubuntu (bold);
+  font-size: 14px;
+  color: $white;
+  margin-bottom: 14px;
+}
+
+.team-list__text-content{
+  @include ubuntu (light);
+  color: $white;
+  font-size: 14px;
+}

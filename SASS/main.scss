@@ -8,6 +8,13 @@ $gray: #2f3234;
 
 $z-fixed-menu: 100;
 
+//resolutions
+
+$phones: 480px;
+$tablets: 768px;
+$laptop: 992px;
+$desktop: 1200px;
+
 //normalize
 @import "_misc/normalize.scss";
 
@@ -29,6 +36,19 @@ $z-fixed-menu: 100;
 @import "blocks/fixed-menu.scss";
 @import "blocks/menu.scss";
 @import "blocks/vertical.scss";
+@import "blocks/team.scss";
+@import "blocks/team-list.scss";
+@import "blocks/order.scss";
+@import "blocks/map.scss";
+@import "blocks/footer.scss";
+@import "blocks/social.scss";
+
+
+
+
+
+
+
 
 
 

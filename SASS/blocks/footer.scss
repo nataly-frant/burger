@@ -1,0 +1,40 @@
+.footer{
+  background: black;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 60px;
+}
+
+.footer__container{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.footer__contacts{
+  width: 50%;
+  padding-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__address{
+  color: $white;
+  font-size: 14px;
+}
+
+
+.footer__phone{
+  color: $red;
+  @include ubuntu(bold);
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer__contacts_social{
+  text-align: right;
+  margin-bottom: 0;
+}
+
