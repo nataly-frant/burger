@@ -1171,9 +1171,12 @@ img {
   opacity: 1;
 }
 
-.social__link-icon {
+.social__link-svg {
   width: 20px;
   height: 20px;
+}
+.social__link-svg svg {
+  min-width: 95%;
 }
 
 .logo {

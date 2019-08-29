@@ -21,7 +21,10 @@
   }
 }
 
-.social__link-icon{
+.social__link-svg{
   width: 20px;
   height: 20px;
+  svg{
+    min-width: 95%;
+  }
 }
