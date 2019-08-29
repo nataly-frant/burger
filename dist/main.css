@@ -1099,7 +1099,6 @@ img {
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin: 0;
 }
 
 .footer__contacts {
@@ -1117,9 +1116,9 @@ img {
 }
 
 .footer__icon {
-  width: 20px;
-  height: 18px;
-  fill: #e35028;
+  width: 46px;
+  height: 46px;
+  max-width: 100%;
 }
 
 .footer__phone {
