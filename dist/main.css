@@ -1069,21 +1069,29 @@ img {
   height: 59px;
   position: absolute;
 }
-.map__marker--one {
+.map__marker-one {
   top: 22%;
   left: 45%;
 }
-.map__marker--two {
+.map__marker-two {
   top: 35%;
   left: 60%;
 }
-.map__marker--there {
+.map__marker-there {
   top: 53%;
   left: 83%;
 }
-.map__marker--four {
+.map__marker-four {
   top: 76%;
   left: 45%;
+}
+
+.map__marker-svg svg {
+  min-width: 95%;
+}
+
+.map__marker-svg {
+  min-width: 95%;
 }
 
 .footer {
@@ -1116,9 +1124,12 @@ img {
 }
 
 .footer__icon {
-  width: 46px;
-  height: 46px;
+  width: 19px;
+  height: 19px;
   max-width: 100%;
+}
+.footer__icon svg {
+  min-width: 95%;
 }
 
 .footer__phone {
@@ -1165,7 +1176,8 @@ img {
   display: inline-block;
   position: relative;
   z-index: 110;
-  height: 95%;
+  width: 93px;
+  height: 73px;
 }
 .logo svg {
   min-width: 95%;

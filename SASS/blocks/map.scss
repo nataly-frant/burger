@@ -12,23 +12,33 @@
   width: 47px;
   height: 59px;
   position: absolute;
-  &--one{
+  &-one{
     top: 22%;
     left: 45%;
   }
 
-  &--two{
+  &-two{
     top: 35%;
     left: 60%;
   }
 
-  &--there{
+  &-there{
     top: 53%;
     left: 83%;
   }
 
-  &--four{
+  &-four{
     top: 76%;
     left: 45%;
   }
+}
+
+.map__marker-svg{
+  svg{
+    min-width: 95%;
+  }
+}
+
+.map__marker-svg{
+  min-width: 95%;
 }
