@@ -23,9 +23,15 @@
   margin: 0;
 }
 
-.footer__address{
+.footer__address-text{
   color: $white;
   font-size: 14px;
+}
+
+.footer__icon{
+  width: 46px;
+  height: 46px;
+  max-width: 100%;
 }
 
 

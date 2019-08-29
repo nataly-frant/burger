@@ -19,6 +19,12 @@
     margin-bottom: 54px;
 }
 
+.best__picture-icon{
+    width: 97px;
+    height: 89px;
+    fill: $red;
+}
+
 .best__title{
     font-size: 24px;
     @include lifehack();

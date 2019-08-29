@@ -605,6 +605,12 @@ img {
   margin-bottom: 54px;
 }
 
+.best__picture-icon {
+  width: 97px;
+  height: 89px;
+  fill: #e35028;
+}
+
 .best__title {
   font-size: 24px;
   font-family: "Lifehack-Medium";
@@ -802,7 +808,7 @@ img {
   display: block;
   margin-bottom: 20px;
 }
-.team-list__trigger::before, .team-list__trigger::after {
+.team-list__trigger:before, .team-list__trigger:after {
   content: "";
   display: block;
   position: absolute;
@@ -811,7 +817,7 @@ img {
   width: 0;
   height: 0;
 }
-.team-list__trigger::before {
+.team-list__trigger:before {
   border-top: 7px solid #f9b43b;
   border-left: 5px solid transparent;
   border-right: 5px solid transparent;
@@ -819,7 +825,7 @@ img {
   transform: rotate(0deg);
   transition: 0.3s;
 }
-.team-list__trigger::after {
+.team-list__trigger:after {
   display: none;
   border-bottom: 7px solid #f9b43b;
   border-left: 5px solid transparent;
@@ -1055,10 +1061,26 @@ img {
   height: 100%;
 }
 
-.map-marker {
+.map__marker {
   width: 47px;
   height: 59px;
   position: absolute;
+}
+.map__marker--one {
+  top: 22%;
+  left: 45%;
+}
+.map__marker--two {
+  top: 35%;
+  left: 60%;
+}
+.map__marker--there {
+  top: 53%;
+  left: 83%;
+}
+.map__marker--four {
+  top: 76%;
+  left: 45%;
 }
 
 .footer {
@@ -1074,6 +1096,7 @@ img {
   display: flex;
   flex-direction: row;
   align-items: center;
+  margin: 0;
 }
 
 .footer__contacts {
@@ -1082,11 +1105,18 @@ img {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  margin: 0;
 }
 
-.footer__address {
+.footer__address-text {
   color: #ffffff;
   font-size: 14px;
+}
+
+.footer__icon {
+  width: 20px;
+  height: 18px;
+  fill: #e35028;
 }
 
 .footer__phone {
