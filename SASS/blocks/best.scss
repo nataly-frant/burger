@@ -23,6 +23,9 @@
     width: 97px;
     height: 89px;
     fill: $red;
+    svg{
+        min-width: 95%;
+    }
 }
 
 .best__title{
