@@ -40,5 +40,9 @@
 }
 
 .map__marker-svg{
-  min-width: 95%;
+  width: 47px;
+  height: 59px;
+  svg{
+    min-width: 95%;
+  }
 }

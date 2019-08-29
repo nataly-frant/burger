@@ -1091,6 +1091,10 @@ img {
 }
 
 .map__marker-svg {
+  width: 47px;
+  height: 59px;
+}
+.map__marker-svg svg {
   min-width: 95%;
 }
 
@@ -1124,8 +1128,8 @@ img {
 }
 
 .footer__icon {
-  width: 19px;
-  height: 19px;
+  width: 13px;
+  height: 13px;
   max-width: 100%;
 }
 .footer__icon svg {
