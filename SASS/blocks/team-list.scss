@@ -4,6 +4,10 @@
     margin-bottom: 0;
   }
   &.active{
+    .team-list__content{
+      height: 100%;
+      display: flex;
+    }
     .team-list__trigger{
       color: $yellow;
 
@@ -60,6 +64,7 @@
 .team-list__pic{
   text-align: center;
   width: 30%;
+  margin-right: 20px;
 }
 
 .team-list__img{
@@ -75,7 +80,6 @@
 }
 
 .team-list__pic, .team-list__text{
-  float: left;
 }
 
 .team-list__title{

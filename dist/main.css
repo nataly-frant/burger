@@ -391,13 +391,12 @@ body {
 .wrapper {
   position: relative;
   width: 100%;
-  min-width: 960px;
   min-height: 100%;
   overflow: hidden;
 }
 
 .container {
-  width: 940px;
+  max-width: 940px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -498,7 +497,7 @@ img {
   padding-top: 12px;
 }
 
-.heade__buttons {
+.header__buttons {
   display: flex;
   align-items: center;
 }
@@ -635,6 +634,16 @@ img {
 .reviews__item:hover .reviews__hover {
   opacity: 1;
 }
+.reviews__item:hover, .reviews__item :before {
+  background-color: rgba(0, 0, 0, 0.534);
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
 
 .reviews__hover {
   color: white;
@@ -724,10 +733,10 @@ img {
   width: 100%;
   justify-content: flex-end;
 }
-.vertical-accordeon__item:hover .vertical-accordeon__title {
+.vertical-accordeon__item_active .vertical-accordeon__title {
   color: #f9b43b;
 }
-.vertical-accordeon__item:hover .vertical-accordeon__wrap-content {
+.vertical-accordeon__item_active .vertical-accordeon__wrap-content {
   width: 540px;
 }
 .vertical-accordeon__trigger {
@@ -795,6 +804,10 @@ img {
 .team-list__item:last-child {
   margin-bottom: 0;
 }
+.team-list__item.active .team-list__content {
+  height: 100%;
+  display: flex;
+}
 .team-list__item.active .team-list__trigger {
   color: #f9b43b;
 }
@@ -844,6 +857,7 @@ img {
 .team-list__pic {
   text-align: center;
   width: 30%;
+  margin-right: 20px;
 }
 
 .team-list__img {
@@ -858,10 +872,6 @@ img {
 
 .team-list__text {
   width: 70%;
-}
-
-.team-list__pic, .team-list__text {
-  float: left;
 }
 
 .team-list__title {

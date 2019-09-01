@@ -11,11 +11,24 @@
   position: relative;
 
   &:hover {
+    
     .reviews__hover {
       opacity: 1;
     }
   }
+
+  &:hover :before{
+    background-color: rgba(0, 0, 0, 0.534);
+    content: '';
+    display: block;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+  }
 }
+
+
 
 .reviews__hover {
   color: white;
