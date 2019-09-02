@@ -1024,6 +1024,12 @@ img {
   background: #e35028;
 }
 
+.order__radio-fake__square:after {
+  width: 16px;
+  height: 16px;
+  background-image: url(./img/chek.png);
+}
+
 .order__radio-title {
   display: inline-block;
   vertical-align: middle;
@@ -1034,6 +1040,9 @@ img {
 
 .order__radio-fake__square.order__radio-fake {
   border-radius: 0px;
+  width: 16px;
+  height: 16px;
+  background: url("/img/chek1.png");
 }
 .order__radio-fake__square .order__radio-elem + .order__radio-fake:after {
   background: transparent;
@@ -1072,40 +1081,6 @@ img {
   left: 0;
   right: 0;
   height: 100%;
-}
-
-.map__marker {
-  width: 47px;
-  height: 59px;
-  position: absolute;
-}
-.map__marker-one {
-  top: 22%;
-  left: 45%;
-}
-.map__marker-two {
-  top: 35%;
-  left: 60%;
-}
-.map__marker-there {
-  top: 53%;
-  left: 83%;
-}
-.map__marker-four {
-  top: 76%;
-  left: 45%;
-}
-
-.map__marker-svg svg {
-  min-width: 95%;
-}
-
-.map__marker-svg {
-  width: 47px;
-  height: 59px;
-}
-.map__marker-svg svg {
-  min-width: 95%;
 }
 
 .footer {
