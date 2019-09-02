@@ -682,7 +682,7 @@ img {
   z-index: 100;
 }
 
-.fixed-menu__item--active .fixed-menu__dot {
+.fixed-menu__item--active .fixed-menu__dot:hover {
   border-color: #fff;
 }
 
@@ -1017,11 +1017,13 @@ img {
   margin-left: 10px;
 }
 
-.order__radio-fake_square.order__radio-fake {
+.order__radio-fake_square {
   border-radius: 0px;
 }
-.order__radio-fake_square .order__radio-elem + .order__radio-fake:after {
-  background: transparent;
+.order__radio-fake_square::after {
+  width: 16px;
+  height: 16px;
+  background: green;
 }
 
 .order__form-buttons {

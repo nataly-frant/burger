@@ -7,7 +7,7 @@
 
 .fixed-menu__item {
   &--active {
-    .fixed-menu__dot {
+    .fixed-menu__dot:hover {
       border-color: #fff;
     }
   }
