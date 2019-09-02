@@ -631,18 +631,18 @@ img {
   background: center center/cover no-repeat;
   position: relative;
 }
-.reviews__item:hover .reviews__hover {
-  opacity: 1;
-}
-.reviews__item:hover, .reviews__item :before {
+.reviews__item:hover:before {
   background-color: rgba(0, 0, 0, 0.534);
+  position: absolute;
   content: "";
   display: block;
-  position: absolute;
   top: 0;
   right: 0;
   left: 0;
   bottom: 0;
+}
+.reviews__item:hover .reviews__hover {
+  opacity: 1;
 }
 
 .reviews__hover {
