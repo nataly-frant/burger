@@ -113,10 +113,8 @@
     left: 50%;
     transform: translate(-50%, -50%);
     transition: width .3s, height .3s;
-
   }
 }
-
 
 .order__radio-elem:checked{
   &+.order__radio-fake{
@@ -136,16 +134,12 @@
   margin-left: 10px;
 }
 
-.order__radio-fake__square{
-  &.order__radio-fake{
-    border-radius: 0px;
-  }
-
-  .order__radio-elem{
-    &+.order__radio-fake{
-      &:after{
-        background: transparent;
-      }
+.order__radio-fake_square{
+  border-radius: 0px;
+  &::after{
+    width: 16px;
+    height: 16px;
+    background: green;
     }
   }
 }

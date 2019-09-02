@@ -930,7 +930,8 @@ img {
 
 .order__form-block {
   display: block;
-  width: 100%;
+  flex: 1;
+  margin-right: 10px;
 }
 .order__form-block:last-child {
   margin-right: 0;
@@ -955,22 +956,6 @@ img {
 }
 .order__form-input:after {
   outline: none;
-}
-
-.order__form-row__double {
-  margin-left: -20px;
-}
-.order__form-row__double .order__form-block {
-  width: calc(100% / 2 - 20px);
-  margin-left: 20px;
-}
-
-.order__form-row__quatro {
-  margin-left: -20px;
-}
-.order__form-row__quatro .order__form-block {
-  width: calc(100% / 4 - 20px);
-  margin-left: 20px;
 }
 
 .order__radio {
@@ -1024,12 +1009,6 @@ img {
   background: #e35028;
 }
 
-.order__radio-fake__square:after {
-  width: 16px;
-  height: 16px;
-  background-image: url(./img/chek.png);
-}
-
 .order__radio-title {
   display: inline-block;
   vertical-align: middle;
@@ -1038,20 +1017,11 @@ img {
   margin-left: 10px;
 }
 
-.order__radio-fake__square.order__radio-fake {
+.order__radio-fake_square.order__radio-fake {
   border-radius: 0px;
-  width: 16px;
-  height: 16px;
-  background: url("/img/chek1.png");
 }
-.order__radio-fake__square .order__radio-elem + .order__radio-fake:after {
+.order__radio-fake_square .order__radio-elem + .order__radio-fake:after {
   background: transparent;
-}
-.order__radio-fake__square .order__radio-elem:checked + .order__radio-fake:after {
-  background: url("../img/chek.png") 50% no-repeat transparent;
-  background-size: contain;
-  width: 11px;
-  height: 9px;
 }
 
 .order__form-buttons {
