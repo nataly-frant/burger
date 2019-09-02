@@ -6,13 +6,13 @@
 .social__item{
   display: inline-block;
   vertical-align: middle;
-  margin-left: 10px;
+  margin-left: rem(10px);
 }
 
 .social__link{
   display: inline-block;
-  min-width: 23px;
-  min-height: 20px;
+  min-width: rem(23px);
+  min-height: rem(20px);
   opacity: .3;
   transition: .3s;
 
@@ -22,8 +22,8 @@
 }
 
 .social__link-svg{
-  width: 20px;
-  height: 20px;
+  width: rem(20px);
+  height: rem(20px);
   svg{
     min-width: 95%;
   }

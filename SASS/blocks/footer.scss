@@ -4,7 +4,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  height: 60px;
+  height: rem(60px);
 }
 
 .footer__container{
@@ -15,7 +15,7 @@
 
 .footer__contacts{
   width: 50%;
-  padding-top: 15px;
+  padding-top: rem(15px);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -24,12 +24,12 @@
 
 .footer__address-text{
   color: $white;
-  font-size: 14px;
+  font-size: rem(14px);
 }
 
 .footer__icon{
-  width: 13px;
-  height: 13px;
+  width: rem(13px);
+  height: rem(13px);
   max-width: 100%;
   svg{
     min-width: 95%;
@@ -41,7 +41,7 @@
   color: $red;
   @include ubuntu(bold);
   text-decoration: none;
-  font-size: 14px;
+  font-size: rem(14px);
 }
 
 .footer__contacts_social{

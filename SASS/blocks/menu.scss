@@ -2,7 +2,7 @@
     background: url('../img/menu.png') center center /cover no-repeat;
     &__title{
         position: absolute;
-        top: 110px;
-        left: 95px;
+        top: rem(110px);
+        left: rem(95px);
     }
 }

@@ -17,18 +17,18 @@
                 color: $yellow;
             }
             .vertical-accordeon__wrap-content{
-                width: 540px;
+                width: rem(540px);
             }
         }
     }
     &__trigger{
         text-decoration: none;
         justify-content: center;
-        width: 80px;
+        width: rem(80px);
         background-repeat: no-repeat;
         background-size: cover;
         position: relative;
-        padding-bottom: 20px;
+        padding-bottom: rem(20px);
         &::after{
             content: '';
             display: flex;;
@@ -45,7 +45,7 @@
         @include gagalin();
         color: $white;
         z-index: 1;
-        font-size: 40px;
+        font-size: rem(40px);
         writing-mode: vertical-rl;
         transform: rotate(-180deg);
     }
@@ -56,8 +56,8 @@
     }
     &__content{
         background-color: rgba(#2f3234, .93);
-        padding: 63px 37px 63px 33px;
+        padding: rem(63px) rem(37px) rem(63px) rem(33px);
         color: $white;
-        min-width: 540px;
+        min-width: rem(540px);
     }
 }

@@ -26,21 +26,21 @@
 .order__form-row{
   display: flex;
   outline: none;
-  margin-bottom: 16px;
+  margin-bottom: rem(16px);
   position: relative;
 }
 
 .order__form-block__title{
-  margin-bottom: 17px;
+  margin-bottom: rem(17px);
   @include ubuntu();
   color: $white;
-  font-size: 14px;
+  font-size: rem(14px);
 }
 
 .order__form-block{
   display: block;
   flex: 1;
-  margin-right: 10px;
+  margin-right: rem(10px);
 
   &:last-child{
     margin-right: 0;
@@ -48,16 +48,16 @@
 }
 
 .order__form-input{
-  font-size: 14px;
+  font-size: rem(14px);
   background: white;
-  border-radius: 3px;
+  border-radius: rem(3px);
   border: none;
-  padding: 8px 21px;
-  border: 1px solid $white;
+  padding: rem(8px) rem(21px);
+  border: rem(1px) solid $white;
   width: 100%;
   &--textarea{
     resize: none;
-    height: 110px;
+    height: rem(110px);
     text-decoration: none;
 
   }
@@ -72,7 +72,7 @@
 .order__radio{
   position: relative;
   white-space: nowrap;
-  margin-right: 20px;
+  margin-right: rem(20px);
   cursor: pointer;
   display: inline-block;
   vertical-align: middle;
@@ -89,8 +89,8 @@
 }
 
 .order__radio-fake {
-  width: 16px;
-  height: 16px;
+  width: rem(16px);
+  height: rem(16px);
   border-radius: 50%;
   background: $white;
   display: inline-block;
@@ -105,8 +105,8 @@
     content: "";
     display: block;
     position: absolute;
-    width: 6px;
-    height: 6px;
+    width: rem(6px);
+    height: rem(6px);
     border-radius: 50%;
     background: $white;
     top: 50%;
@@ -119,8 +119,8 @@
 .order__radio-elem:checked{
   &+.order__radio-fake{
     &:after{
-      width: 6px;
-      height: 6px;
+      width: rem(6px);
+      height: rem(6px);
       background: $red;
     }
   }
@@ -129,16 +129,16 @@
 .order__radio-title{
   display: inline-block;
   vertical-align: middle;
-  font-size: 14px;
+  font-size: rem(14px);
   color: $white;
-  margin-left: 10px;
+  margin-left: rem(10px);
 }
 
 .order__radio-fake_square{
-  border-radius: 0px;
+  border-radius: rem(0px);
   &::after{
-    width: 16px;
-    height: 16px;
+    width: rem(16px);
+    height: rem(16px);
     background: green;
     }
 }
@@ -147,11 +147,11 @@
   display: inline-block;
   vertical-align: middle;
   border: 0;
-  font-size: 13px;
-  border-radius: 5px;
+  font-size: rem(13px);
+  border-radius: rem(5px);
   color: $white;
   @include ubuntu (middle);
-  padding: 10px 15px 15px 0px;
+  padding: rem(10px) rem(15px) rem(15px) rem(0px);
   cursor: pointer;
 }
 

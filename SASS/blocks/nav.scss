@@ -1,22 +1,22 @@
 .nav__list {
   display: flex;
   align-items: center;
-  margin-right: 15px;
+  margin-right: rem(15px);
 }
 
 .nav__item {
   display: flex;
   align-items: center;
-  margin-right: 15px;
+  margin-right: rem(15px);
 
   &:after {
     content: "";
-    width: 4px;
-    height: 4px;
+    width: rem(4px);
+    height: rem(4px);
     background: white;
     border-radius: 50%;
     display: block;
-    margin-left: 15px;
+    margin-left: rem(15px);
   }
 
 
@@ -32,7 +32,7 @@
 .nav__link {
   text-decoration: none;
   color: white;
-  font-size: 13px;
+  font-size: rem(13px);
   text-transform: uppercase;
   font-weight: 500;
 }

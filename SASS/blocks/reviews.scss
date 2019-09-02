@@ -40,17 +40,17 @@
   left: 50%;
   margin-right: -50%;
   transform: translate(-50%, -50%);
-  max-width: 235px;
+  max-width: rem(235px);
 }
 
 .reviews__title {
-  font-size: 14px;
+  font-size: rem(14px);
   @include gagalin();
-  margin-bottom: 30px;
+  margin-bottom: rem(30px);
 }
 
 .reviews__text {
-  margin-bottom: 14px;
+  margin-bottom: rem(14px);
 }
 
 .reviews__pic {

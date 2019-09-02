@@ -14,12 +14,12 @@
 }
 
 .hero__desc{
-  padding-top: 85px; 
-  margin-left: 20px;
+  padding-top: rem(85px); 
+  margin-left: rem(20px);
 }
 
 .hero__subtitle{
-  font-size: 65px;
+  font-size: rem(65px);
   color: white;
   line-height: 1;
   @include lifehack;
