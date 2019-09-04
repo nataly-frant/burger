@@ -4,6 +4,11 @@
   color: $yellow;
   margin-bottom: rem(55px);
   line-height: 1;
+
+  @include tablets{
+    font-size: rem(65px)
+  }
+  
   &--color{
     &--white{
       color: $white;
