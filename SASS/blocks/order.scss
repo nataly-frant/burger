@@ -13,7 +13,11 @@
   @extend %clearfix;
   margin-left: 5%;
   content: "";
-	display: table;
+  display: table;
+  
+  @include tablets {
+    flex-direction: column;
+  }
 }
 
 .order__form-colum{
@@ -21,6 +25,13 @@
   width: 45%;
   flex: 1;
   margin-left: 5%;
+
+  @include tablets {
+    width: 100%;
+    flex-direction: column;
+    margin-left: 0;
+    padding: 0 20%;
+  }
 }
 
 .order__form-row{
@@ -55,7 +66,7 @@
   padding: rem(8px) rem(21px);
   border: rem(1px) solid $white;
   width: 100%;
-  &--textarea{
+  &_textarea{
     resize: none;
     height: rem(110px);
     text-decoration: none;
