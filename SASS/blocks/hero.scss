@@ -16,6 +16,10 @@
     flex-direction: column;
     padding: 0 23%
   }
+
+  @include phones{
+    padding: 0 12%;
+  }
 }
 
 .hero__left, .hero__right {
@@ -33,6 +37,10 @@
     padding-top: 0;
     text-align: center;
   }
+
+  @include phones{
+    padding: 0 12%;
+  }
 }
 
 .hero__subtitle{
@@ -40,4 +48,8 @@
   color: white;
   line-height: 1;
   @include lifehack;
+
+  @include phones{
+    font-size: rem(42px);
+  }
 }

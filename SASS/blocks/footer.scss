@@ -4,13 +4,17 @@
   left: 0;
   right: 0;
   bottom: 0;
-  height: rem(60px);
+  padding: rem(10px) 0;
 }
 
 .footer__container{
   display: flex;
   flex-direction: row;
   align-items: center;
+
+  @include phones{
+    flex-direction: column;
+  }
 }
 
 .footer__contacts{

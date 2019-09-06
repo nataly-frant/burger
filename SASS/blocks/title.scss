@@ -6,12 +6,20 @@
   line-height: 1;
 
   @include tablets{
-    font-size: rem(65px)
+    font-size: rem(65px);
   }
   
+  @include phones{
+    font-size: rem(62px);
+  }
+
   &--color{
     &--white{
       color: $white;
+
+      @include tablets {
+        display: none;
+      }
 
     }
     &--black{

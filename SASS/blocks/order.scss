@@ -30,7 +30,11 @@
     width: 100%;
     flex-direction: column;
     margin-left: 0;
-    padding: 0 20%;
+    padding: 0 10%;
+  }
+
+  @include phones{
+    padding: 0;
   }
 }
 
@@ -55,6 +59,12 @@
 
   &:last-child{
     margin-right: 0;
+  }
+}
+
+.order__form-block--hidden-on-mobil{
+  @include phones{
+    display: none;
   }
 }
 
@@ -133,6 +143,12 @@
       width: rem(6px);
       height: rem(6px);
       background: $red;
+      &_square{
+        width: rem(11px);
+        height: rem(9px);
+        background: url('../img/chek.png') 50% no-repeat;
+        background-size: contain;
+      }
     }
   }
 }
@@ -148,10 +164,11 @@
 .order__radio-fake_square{
   border-radius: rem(0px);
   &::after{
-    width: rem(16px);
-    height: rem(16px);
-    background: green;
-    }
+    background: url("../../img/chek.png") 50% no-repeat transparent;
+    width: rem(11px);
+    height: rem(9px);
+    background-size: contain;
+  }
 }
 
 .order__form-buttons{
@@ -164,6 +181,12 @@
   @include ubuntu (middle);
   padding: rem(10px) rem(15px) rem(15px) rem(0px);
   cursor: pointer;
+
+  @include phones{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .order__form-button__reset{

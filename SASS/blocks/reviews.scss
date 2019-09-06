@@ -64,6 +64,10 @@
     font-size: rem(13px);
     margin-bottom: rem(15px);
   }
+
+  @include phones {
+    font-size: rem(24px);
+  }
 }
 
 .reviews__text {
@@ -71,6 +75,10 @@
 
   @include tablets{
     font-size: rem(13px);
+  }
+
+  @include phones {
+    display: none;
   }
 }
 

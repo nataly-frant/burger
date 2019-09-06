@@ -18,6 +18,10 @@
             }
             .vertical-accordeon__wrap-content{
                 width: rem(540px);
+
+                @include phones{
+                    width: rem(336px);
+                }
             }
         }
     }
@@ -29,6 +33,9 @@
         background-size: cover;
         position: relative;
         padding-bottom: rem(20px);
+        @include phones {
+            width: rem(60px);
+        }
         &::after{
             content: '';
             display: flex;;
@@ -48,6 +55,9 @@
         font-size: rem(40px);
         writing-mode: vertical-rl;
         transform: rotate(-180deg);
+        @include phones {
+            font-size: rem(38px);
+        }
     }
     &__wrap-content{
         width: 0;
@@ -58,6 +68,10 @@
         background-color: rgba(#2f3234, .93);
         padding: rem(63px) rem(37px) rem(63px) rem(33px);
         color: $white;
-        min-width: rem(540px);
+        width: rem(540px);
+        
+        @include phones{
+            min-width: rem(436px);
+        }
     }
 }
