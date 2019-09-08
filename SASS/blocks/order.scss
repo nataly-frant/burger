@@ -143,11 +143,28 @@
       width: rem(6px);
       height: rem(6px);
       background: $red;
-      &_square{
+    }
+  }
+}
+
+.order__radio_checkbox {
+  .order__radio-fake {
+    border-radius: rem(0px);
+  }
+  .order__radio-elem {
+    &+.order__radio-fake {
+      &:after {
+        background: transparent;
+      }
+    }
+  }
+  .order__radio-elem:checked {
+    &+.order__radio-fake {
+      &:after {
+        background: url("../img/chek.png") 50% no-repeat transparent;
+        background-size: contain;
         width: rem(11px);
         height: rem(9px);
-        background: url('../img/chek.png') 50% no-repeat;
-        background-size: contain;
       }
     }
   }
@@ -159,16 +176,6 @@
   font-size: rem(14px);
   color: $white;
   margin-left: rem(10px);
-}
-
-.order__radio-fake_square{
-  border-radius: rem(0px);
-  &::after{
-    background: url("../../img/chek.png") 50% no-repeat transparent;
-    width: rem(11px);
-    height: rem(9px);
-    background-size: contain;
-  }
 }
 
 .order__form-buttons{
