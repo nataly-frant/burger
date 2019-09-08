@@ -840,7 +840,7 @@ img {
   }
 }
 
-.fixed-menu__item--active .fixed-menu__dot:hover {
+.fixed-menu__item--active .fixed-menu__dot {
   border-color: #fff;
 }
 
@@ -866,6 +866,9 @@ img {
 }
 .fixed-menu__dot:last-child {
   margin-bottom: 0;
+}
+.fixed-menu__dot:hover {
+  border-color: #fff;
 }
 
 .menu {
@@ -1388,6 +1391,9 @@ img {
   transition: 0.3s;
 }
 .social__link:hover {
+  opacity: 1;
+}
+.social__link--active {
   opacity: 1;
 }
 
