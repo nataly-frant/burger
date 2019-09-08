@@ -902,9 +902,14 @@ img {
 .vertical-accordeon__item_active .vertical-accordeon__wrap-content {
   width: 33.75rem;
 }
+@media screen and (max-width: 768px) {
+  .vertical-accordeon__item_active .vertical-accordeon__wrap-content {
+    min-width: 48rem;
+  }
+}
 @media screen and (max-width: 480px) {
   .vertical-accordeon__item_active .vertical-accordeon__wrap-content {
-    width: 21rem;
+    max-width: 30rem;
   }
 }
 .vertical-accordeon__trigger {
@@ -1329,10 +1334,22 @@ img {
   justify-content: space-between;
   margin: 0;
 }
+@media screen and (max-width: 480px) {
+  .footer__contacts {
+    text-align: center;
+    width: auto;
+  }
+}
 
 .footer__address-text {
   color: #ffffff;
   font-size: 0.875rem;
+}
+
+@media screen and (max-width: 480px) {
+  .footer__address-phone {
+    padding-top: 0.625rem;
+  }
 }
 
 .footer__icon {

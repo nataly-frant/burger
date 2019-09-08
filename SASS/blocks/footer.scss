@@ -24,11 +24,22 @@
   flex-direction: column;
   justify-content: space-between;
   margin: 0;
+
+  @include phones{
+    text-align: center;
+    width: auto;
+  }
 }
 
 .footer__address-text{
   color: $white;
   font-size: rem(14px);
+}
+
+.footer__address-phone{
+  @include phones{
+    padding-top: rem(10px);
+  }
 }
 
 .footer__icon{
