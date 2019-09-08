@@ -1,0 +1,12 @@
+.logo{
+  display: inline-block;
+  position: relative;
+  z-index: 110;
+  width: rem(93px);
+  height: rem(73px);
+
+  svg{
+    min-width: 95%;
+  }
+}
+

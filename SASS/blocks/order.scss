@@ -1,0 +1,197 @@
+.order{
+  background: url('../img/order.jpg') 50% / cover no-repeat;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+
+.order__container{
+  margin: 0;
+}
+
+.order__form{
+  @extend %clearfix;
+  margin-left: 5%;
+  content: "";
+  display: table;
+  
+  @include tablets {
+    flex-direction: column;
+  }
+}
+
+.order__form-colum{
+  float: left;
+  width: 45%;
+  flex: 1;
+  margin-left: 5%;
+
+  @include tablets {
+    width: 100%;
+    flex-direction: column;
+    margin-left: 0;
+    padding: 0 10%;
+  }
+
+  @include phones{
+    padding: 0;
+  }
+}
+
+.order__form-row{
+  display: flex;
+  outline: none;
+  margin-bottom: rem(16px);
+  position: relative;
+}
+
+.order__form-block__title{
+  margin-bottom: rem(17px);
+  @include ubuntu();
+  color: $white;
+  font-size: rem(14px);
+}
+
+.order__form-block{
+  display: block;
+  flex: 1;
+  margin-right: rem(10px);
+
+  &:last-child{
+    margin-right: 0;
+  }
+}
+
+.order__form-block--hidden-on-mobil{
+  @include phones{
+    display: none;
+  }
+}
+
+.order__form-input{
+  font-size: rem(14px);
+  background: white;
+  border-radius: rem(3px);
+  border: none;
+  padding: rem(8px) rem(21px);
+  border: rem(1px) solid $white;
+  width: 100%;
+  &_textarea{
+    resize: none;
+    height: rem(110px);
+    text-decoration: none;
+
+  }
+  &:hover{
+    outline-color: $red;
+  }
+  &:after{
+    outline: none;
+  }
+}
+
+.order__radio{
+  position: relative;
+  white-space: nowrap;
+  margin-right: rem(20px);
+  cursor: pointer;
+  display: inline-block;
+  vertical-align: middle;
+  display: flex;
+  &:last-child{
+    margin-right: 0;
+  }
+
+}
+.order__radio-elem {
+  position: absolute;
+  top: 0;
+  opacity: 0;
+}
+
+.order__radio-fake {
+  width: rem(16px);
+  height: rem(16px);
+  border-radius: 50%;
+  background: $white;
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+
+  /*&__square{
+    border-radius: 0%;
+  }*/
+
+  &:after{
+    content: "";
+    display: block;
+    position: absolute;
+    width: rem(6px);
+    height: rem(6px);
+    border-radius: 50%;
+    background: $white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: width .3s, height .3s;
+  }
+}
+
+.order__radio-elem:checked{
+  &+.order__radio-fake{
+    &:after{
+      width: rem(6px);
+      height: rem(6px);
+      background: $red;
+      &_square{
+        width: rem(11px);
+        height: rem(9px);
+        background: url('../img/chek.png') 50% no-repeat;
+        background-size: contain;
+      }
+    }
+  }
+}
+
+.order__radio-title{
+  display: inline-block;
+  vertical-align: middle;
+  font-size: rem(14px);
+  color: $white;
+  margin-left: rem(10px);
+}
+
+.order__radio-fake_square{
+  border-radius: rem(0px);
+  &::after{
+    background: url("../../img/chek.png") 50% no-repeat transparent;
+    width: rem(11px);
+    height: rem(9px);
+    background-size: contain;
+  }
+}
+
+.order__form-buttons{
+  display: inline-block;
+  vertical-align: middle;
+  border: 0;
+  font-size: rem(13px);
+  border-radius: rem(5px);
+  color: $white;
+  @include ubuntu (middle);
+  padding: rem(10px) rem(15px) rem(15px) rem(0px);
+  cursor: pointer;
+
+  @include phones{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.order__form-button__reset{
+  padding-left: 0;
+  padding-right: 0;
+  text-transform: none;
+  background: transparent;
+}

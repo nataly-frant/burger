@@ -1,0 +1,8 @@
+.menu{
+    background: url('../img/menu.png') center center /cover no-repeat;
+    &__title{
+        position: absolute;
+        top: rem(110px);
+        left: rem(95px);
+    }
+}
