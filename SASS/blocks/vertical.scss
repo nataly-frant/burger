@@ -18,10 +18,6 @@
             }
             .vertical-accordeon__wrap-content{
                 width: rem(540px);
-
-                @include phones{
-                    width: rem(336px);
-                }
             }
         }
     }

@@ -654,11 +654,6 @@ img {
 .title--color--white {
   color: #ffffff;
 }
-@media screen and (max-width: 768px) {
-  .title--color--white {
-    display: none;
-  }
-}
 .title--color--black {
   color: #2f3234;
 }
