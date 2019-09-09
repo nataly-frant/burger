@@ -8,6 +8,10 @@
 .header__buttons{
   display: flex;
   align-items: center;
+
+  @include tablets{
+    margin-right: rem(34px);
+  }
 }
 
 .header__menu{

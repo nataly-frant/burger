@@ -555,6 +555,11 @@ img {
   display: flex;
   align-items: center;
 }
+@media screen and (max-width: 768px) {
+  .header__buttons {
+    margin-right: 2.125rem;
+  }
+}
 
 @media screen and (max-width: 768px) {
   .header__menu {
