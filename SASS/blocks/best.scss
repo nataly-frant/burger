@@ -41,7 +41,7 @@
 .best__desc{
     @include phones{
         text-align: left;
-        margin-bottom: rem(20px);
+        margin-bottom: rem(10px);
         margin-left: rem(15px);
     }
 }
@@ -59,4 +59,9 @@
     font-size: rem(24px);
     @include lifehack();
     margin-bottom: rem(33px);
+
+    @include phones{
+        margin-bottom: rem(30px);
+        font-size: rem(22px);
+    }
     }

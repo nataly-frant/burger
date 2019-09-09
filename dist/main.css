@@ -411,7 +411,7 @@ body {
 }
 
 .container {
-  width: 95%;
+  width: 99%;
   max-width: 58.75rem;
   margin: 0 auto;
   display: flex;
@@ -649,7 +649,8 @@ img {
 }
 @media screen and (max-width: 480px) {
   .title {
-    font-size: 3.875rem;
+    font-size: 3.75rem;
+    margin-bottom: 2.5rem;
   }
 }
 .title--color--white {
@@ -719,7 +720,7 @@ img {
 @media screen and (max-width: 480px) {
   .best__desc {
     text-align: left;
-    margin-bottom: 1.25rem;
+    margin-bottom: 0.625rem;
     margin-left: 0.9375rem;
   }
 }
@@ -737,6 +738,11 @@ img {
   font-size: 1.5rem;
   font-family: "Lifehack-Medium";
   margin-bottom: 2.0625rem;
+}
+@media screen and (max-width: 480px) {
+  .best__title {
+    margin-bottom: 1.875rem;
+  }
 }
 
 .reviews__list {
