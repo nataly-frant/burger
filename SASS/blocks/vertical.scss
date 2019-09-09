@@ -18,6 +18,10 @@
             }
             .vertical-accordeon__wrap-content{
                 width: rem(540px);
+                
+                @include phones{
+                    width: rem(232px);
+                }
             }
         }
     }
@@ -29,8 +33,10 @@
         background-size: cover;
         position: relative;
         padding-bottom: rem(20px);
+        height: 100%;
+        
         @include phones {
-            width: rem(60px);
+            width: rem(50px);
         }
         &::after{
             content: '';
@@ -64,10 +70,12 @@
         background-color: rgba(#2f3234, .93);
         padding: rem(63px) rem(37px) rem(63px) rem(33px);
         color: $white;
-        width: rem(540px);
+        width: 100%;
+        line-height: 1.5;
         
         @include phones{
-            min-width: rem(436px);
+            padding: rem(20px) rem(20px) rem(30px) rem(15px);
+            line-height: 1.4;
         }
     }
 }

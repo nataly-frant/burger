@@ -9,4 +9,8 @@
     &--non-centered {
         justify-content: flex-start;
     }
+
+    @include tablets{
+        min-height: initial;
+    }
 }

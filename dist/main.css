@@ -480,6 +480,11 @@ img {
 .section--non-centered {
   justify-content: flex-start;
 }
+@media screen and (max-width: 768px) {
+  .section {
+    min-height: initial;
+  }
+}
 
 .hero {
   background: url("../img/about.jpg") center center/cover no-repeat;
@@ -913,6 +918,11 @@ img {
 .vertical-accordeon__item_active .vertical-accordeon__wrap-content {
   width: 33.75rem;
 }
+@media screen and (max-width: 480px) {
+  .vertical-accordeon__item_active .vertical-accordeon__wrap-content {
+    width: 14.5rem;
+  }
+}
 .vertical-accordeon__trigger {
   text-decoration: none;
   justify-content: center;
@@ -921,10 +931,11 @@ img {
   background-size: cover;
   position: relative;
   padding-bottom: 1.25rem;
+  height: 100%;
 }
 @media screen and (max-width: 480px) {
   .vertical-accordeon__trigger {
-    width: 3.75rem;
+    width: 3.125rem;
   }
 }
 .vertical-accordeon__trigger::after {
@@ -960,11 +971,13 @@ img {
   background-color: rgba(47, 50, 52, 0.93);
   padding: 3.9375rem 2.3125rem 3.9375rem 2.0625rem;
   color: #ffffff;
-  width: 33.75rem;
+  width: 100%;
+  line-height: 1.5;
 }
 @media screen and (max-width: 480px) {
   .vertical-accordeon__content {
-    min-width: 27.25rem;
+    padding: 1.25rem 1.25rem 1.875rem 0.9375rem;
+    line-height: 1.4;
   }
 }
 
