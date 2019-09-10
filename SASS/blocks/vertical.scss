@@ -3,6 +3,8 @@
     width: 100%;
     display: flex;
     justify-content: flex-end;
+    z-index: 1;
+
     &__list, &__item, &__trigger, &__content{
         display: flex;
         height: 100%;
