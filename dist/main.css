@@ -494,6 +494,11 @@ img {
 .hero__container {
   height: 100%;
 }
+@media screen and (max-width: 768px) {
+  .hero__container {
+    margin: 0;
+  }
+}
 
 .hero__content {
   display: flex;
@@ -529,11 +534,13 @@ img {
   .hero__desc {
     padding-top: 0;
     text-align: center;
+    margin-left: 0;
   }
 }
 @media screen and (max-width: 480px) {
   .hero__desc {
     padding: 0 12%;
+    margin-left: 0;
   }
 }
 
@@ -562,7 +569,7 @@ img {
 }
 @media screen and (max-width: 768px) {
   .header__buttons {
-    margin-right: 2.125rem;
+    margin-right: 3.125rem;
   }
 }
 
@@ -752,6 +759,7 @@ img {
 @media screen and (max-width: 480px) {
   .best__title {
     margin-bottom: 1.875rem;
+    font-size: 1.375rem;
   }
 }
 
@@ -903,10 +911,12 @@ img {
   width: 100%;
   display: flex;
   justify-content: flex-end;
+  z-index: 1;
 }
 .vertical-accordeon__list, .vertical-accordeon__item, .vertical-accordeon__trigger, .vertical-accordeon__content {
   display: flex;
   height: 100%;
+  flex-direction: row-reverse;
 }
 .vertical-accordeon__list {
   width: 100%;
@@ -916,11 +926,11 @@ img {
   color: #f9b43b;
 }
 .vertical-accordeon__item_active .vertical-accordeon__wrap-content {
-  width: 33.75rem;
+  width: 100%;
 }
 @media screen and (max-width: 480px) {
   .vertical-accordeon__item_active .vertical-accordeon__wrap-content {
-    width: 14.5rem;
+    width: 100%;
   }
 }
 .vertical-accordeon__trigger {
@@ -1052,6 +1062,7 @@ img {
 @media screen and (max-width: 768px) {
   .team-list__trigger {
     display: inline-flex;
+    font-size: 0.9375rem;
   }
 }
 .team-list__trigger:before, .team-list__trigger:after {
@@ -1081,6 +1092,7 @@ img {
 
 .team-list__content {
   padding-top: 0.875rem;
+  padding-bottom: 0.625rem;
   display: none;
 }
 
@@ -1111,12 +1123,22 @@ img {
   color: #ffffff;
   margin-bottom: 0.875rem;
 }
+@media screen and (max-width: 768px) {
+  .team-list__title {
+    font-size: 0.9375rem;
+  }
+}
 
 .team-list__text-content {
   font-family: "Ubuntu", Helvetica, sans-serif;
   font-weight: 300;
   color: #ffffff;
   font-size: 0.875rem;
+}
+@media screen and (max-width: 768px) {
+  .team-list__text-content {
+    font-size: 0.9375rem;
+  }
 }
 
 .order {
@@ -1449,7 +1471,8 @@ img {
   .order-hamburger {
     display: inline-flex;
     position: fixed;
-    right: 0;
+    right: 1rem;
+    z-index: 10;
   }
 }
 
