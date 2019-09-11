@@ -19,11 +19,7 @@
                 color: $yellow;
             }
             .vertical-accordeon__wrap-content{
-                width: rem(540px);
-                
-                @include phones{
-                    width: rem(232px);
-                }
+                width: 100%;
             }
         }
     }
@@ -37,9 +33,6 @@
         padding-bottom: rem(20px);
         height: 100%;
         
-        @include phones {
-            width: rem(50px);
-        }
         &::after{
             content: '';
             display: flex;;
@@ -67,6 +60,7 @@
         width: 0;
         overflow: hidden;
         transition: .5s;
+        order: -1;
     }
     &__content{
         background-color: rgba(#2f3234, .93);
@@ -80,4 +74,8 @@
             line-height: 1.4;
         }
     }
+}
+
+.vertical-accordeon__item{
+    flex-direction: row-reverse;
 }
