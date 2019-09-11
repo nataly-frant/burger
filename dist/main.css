@@ -937,6 +937,11 @@ img {
   padding-bottom: 1.25rem;
   height: 100%;
 }
+@media screen and (max-width: 480px) {
+  .vertical-accordeon__trigger {
+    width: 3rem;
+  }
+}
 .vertical-accordeon__trigger::after {
   content: "";
   display: flex;
@@ -978,6 +983,7 @@ img {
   .vertical-accordeon__content {
     padding: 1.25rem 1.25rem 1.875rem 0.9375rem;
     line-height: 1.4;
+    font-size: 0.625rem;
   }
 }
 

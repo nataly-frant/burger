@@ -32,6 +32,10 @@
         position: relative;
         padding-bottom: rem(20px);
         height: 100%;
+
+        @include phones{
+            width: rem(48px);
+        }
         
         &::after{
             content: '';
