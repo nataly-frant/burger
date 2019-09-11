@@ -983,7 +983,7 @@ img {
   .vertical-accordeon__content {
     padding: 1.25rem 1.25rem 1.875rem 0.9375rem;
     line-height: 1.4;
-    font-size: 0.625rem;
+    font-size: 0.75rem;
   }
 }
 
@@ -1162,6 +1162,11 @@ img {
     flex-direction: column;
   }
 }
+@media screen and (max-width: 480px) {
+  .order__form {
+    margin-left: 0;
+  }
+}
 
 .order__form-colum {
   float: left;
@@ -1180,6 +1185,7 @@ img {
 @media screen and (max-width: 480px) {
   .order__form-colum {
     padding: 0;
+    margin-left: 0;
   }
 }
 

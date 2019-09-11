@@ -18,6 +18,10 @@
   @include tablets {
     flex-direction: column;
   }
+
+  @include phones{
+    margin-left: 0;
+  }
 }
 
 .order__form-colum{
@@ -35,6 +39,7 @@
 
   @include phones{
     padding: 0;
+    margin-left: 0;
   }
 }
 
