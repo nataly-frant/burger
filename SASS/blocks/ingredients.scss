@@ -1,0 +1,12 @@
+.ingredients{
+    position: absolute;
+    top: rem(20px);
+    background: rgba(227, 80, 40, 0.4);
+    width: rem(90px);
+    height: rem(90px);
+    border-radius: rem(5px);
+    transition: .3s;
+    &_active{
+        background: #e35028;
+    }
+}

@@ -13,9 +13,9 @@ let teamAccoJS = () => {
           items[i].classList.remove("team-list__item_active");
         }
         item.classList.add("team-list__item_active");
-  } else{
+    } else{
     item.classList.remove("team-list__item_active");
   }
-};
+});
  
 teamAccoJS();

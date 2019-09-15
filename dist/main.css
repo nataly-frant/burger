@@ -1500,4 +1500,68 @@ img {
   bottom: 0;
 }
 
+.burgers {
+  background: url("../img/rectangle.jpg") center center/cover no-repeat;
+}
+
+.slider-wrap {
+  position: relative;
+}
+
+.slider__btn_next {
+  right: -2.5em;
+}
+
+.slider__btn {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%);
+}
+
+.slider__item {
+  position: relative;
+  padding-bottom: 5rem;
+  display: flex;
+}
+
+.slider__left {
+  text-align: center;
+  align-items: flex-end;
+  display: flex;
+  justify-content: center;
+}
+
+.slider__left, .slider__right {
+  flex: 1;
+}
+
+.burger-weight {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  opacity: 0.5;
+}
+
+.slider__pic {
+  max-width: 98%;
+}
+
+.slider__text {
+  color: #ffffff;
+  margin-bottom: 1.875rem;
+}
+
+.ingredients {
+  position: absolute;
+  top: 1.25rem;
+  background: rgba(227, 80, 40, 0.4);
+  width: 5.625rem;
+  height: 5.625rem;
+  border-radius: 0.3125rem;
+  transition: 0.3s;
+}
+.ingredients_active {
+  background: #e35028;
+}
+
 /*# sourceMappingURL=main.css.map */
