@@ -119,9 +119,26 @@
             <ul class="slider__list">
               <li class="slider__item">
                 <div class="ingredients ingredients_active">
-                  <svg class="ingredients__icon"></svg>
+                  <img class="ingredients__icon" src="./img/burger.png"></img>
                   <div class="ingredients__icon-text">Состав</div>
-                  <div class="ingredients__dropdown"></div>
+                  <div class="ingredients__dropdown">
+                    <ul class="ingredients__list">
+                      <li class="ingredients__item">
+                        <svg class="ingredients__item-icon">
+                          <use xlink:href="./sprite.svg#beef"></use>
+                        </svg>
+                        <div class="ingredients__item-text">Говядина</div>
+                        <div class="ingredients__item-weight">300г</div>
+                      </li>
+                      <li class="ingredients__item">
+                        <svg class="ingredients__item-icon">
+                          <use xlink:href="./sprite.svg#buns"></use>
+                        </svg>
+                        <div class="ingredients__item-text">Булочки></div>
+                        <div class="ingredients__item-weight">100г</div>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
                 <div class="burger-weight"></div>
                 <div class="slider__left">

@@ -1549,6 +1549,32 @@ img {
 .slider__text {
   color: #ffffff;
   margin-bottom: 1.875rem;
+  font-size: 0.875rem;
+}
+
+.slider__options {
+  display: flex;
+  align-items: flex-end;
+}
+
+.slider__price {
+  display: flex;
+  align-items: flex-end;
+  color: #e35028;
+  font-family: gagalin, cursive;
+  font-weight: normal;
+  font-style: normal;
+  text-transform: uppercase;
+  margin-right: 1.5rem;
+}
+.slider__price-sum {
+  font-size: 4.5rem;
+}
+.slider__price-text {
+  font-size: 1.875rem;
+}
+.slider__price-sum, .slider__price .-text {
+  line-height: 1;
 }
 
 .ingredients {
@@ -1559,9 +1585,39 @@ img {
   height: 5.625rem;
   border-radius: 0.3125rem;
   transition: 0.3s;
+  text-align: center;
+  padding-top: 0.625rem;
 }
 .ingredients_active {
   background: #e35028;
+}
+.ingredients_active.ingredients__dropdown {
+  left: 100%;
+  opacity: 1;
+}
+
+.ingredients__icon {
+  height: 60%;
+}
+
+.ingredients__icon-text {
+  color: #ffffff;
+  font-size: 0.875rem;
+  font-family: gagalin regular;
+}
+
+.ingredients__dropdown {
+  display: flex;
+  text-align: flex-start;
+  padding: 1.125rem;
+  background: rgba(255, 255, 255, 0.9);
+  position: absolute;
+  width: 16.875rem;
+  border-radius: 0.4375rem;
+  z-index: 10;
+  top: 0;
+  opacity: 0;
+  left: -9999px;
 }
 
 /*# sourceMappingURL=main.css.map */
