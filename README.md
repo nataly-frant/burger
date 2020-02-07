@@ -1,1 +1,2 @@
-My second site
+# My second site
+By LoftSchool
